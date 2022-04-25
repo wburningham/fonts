@@ -1,9 +1,9 @@
 cask "font-wes-handwriting-font" do
-  version "0.0.2"
-  sha256 "096bda1ffa1fee58558beba624d65bc940e7b6d33b655960785df14c555c24c2"
+  version "0.0.3"
+  sha256 "19c72dfb65400eb01234f47f3c815d358f7618f9e96f682ed27f7d40c675f723"
 
   url "https://github.com/wburningham/fonts/releases/download/v#{version}/WesHandwriting.zip"
   name "Wes Handwriting"
 
-  font "Wes Handwriting.ttf"
+  font "WesHandwriting-Regular.otf"
 end
