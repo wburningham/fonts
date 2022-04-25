@@ -8,9 +8,9 @@ publish:
 	@echo "Must pass in a version parameter; 'make version=... publish'"
 	@exit 1
 else
-publish:
-	./upload-github-release-assets.sh github_api_token=${TOKEN} owner=wburningham repo=fonts tag=${version} filename=./src/RebeccaHandwriting.zip
-	./upload-github-release-assets.sh github_api_token=${TOKEN} owner=wburningham repo=fonts tag=${version} filename=./src/WesHandwriting.zip
+publish: archive
+	./upload-github-release-assets.sh github_api_token=${TOKEN} owner=wburningham repo=fonts tag=${version} filename=./src/RebeccaHandwriting/RebeccaHandwriting.zip
+	./upload-github-release-assets.sh github_api_token=${TOKEN} owner=wburningham repo=fonts tag=${version} filename=./src/WesHandwriting/WesHandwriting.zip
 endif
 
 # upload-github-release-assets.sh

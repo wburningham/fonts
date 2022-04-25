@@ -1,4 +1,4 @@
 PHONY: archive
 archive:
-	zip RebeccaHandwriting.zip RebeccaHandwriting/*
-	zip WesHandwriting.zip WesHandwriting/*
+	${MAKE} -C RebeccaHandwriting archive	
+	${MAKE} -C WesHandwriting archive	
